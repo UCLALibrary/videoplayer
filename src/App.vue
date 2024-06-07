@@ -76,6 +76,7 @@ export default {
     }
   },
   mounted() {
+    document.title = `${this.title} (UCLA Library)`
     this.player = videojs(this.$refs.videoPlayer, this.options)
   },
   beforeUnmount() {
